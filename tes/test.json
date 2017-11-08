@@ -1,1 +1,49 @@
-{"info":{"title":"wqe","description":"qwe","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "wqe",
+    "description": "qwe",
+    "license": {
+      "name": "GNU AGPLv3",
+      "url": "https://www.gnu.org/licenses/agpl.txt"
+    },
+    "version": "1.0"
+  },
+  "paths": {
+    "/e": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "ad",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "e": {
+        "title": "Root Type for e",
+        "description": "The root of the e type's schema.",
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
